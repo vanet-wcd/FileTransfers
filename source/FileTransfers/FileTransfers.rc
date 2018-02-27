@@ -1,0 +1,217 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\FileTransfers.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\FileTransfers1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 67
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 FileTransfers"
+FONT 9, "宋体", 0, 0, 0x0
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "FileTransfers 2.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2016",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+    LTEXT           "作者: 华南理工大学 吴朝东",IDC_STATIC,67,42,115,18
+END
+
+IDD_FILETRANSFERS_DIALOG DIALOGEX 0, 0, 266, 127
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "FileTransfers"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "服务选择",IDC_STATIC,9,6,59,44
+    CONTROL         "服务器(&S)",IDC_RADIO_SERVER,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,14,18,52,10
+    CONTROL         "客户端(&C)",IDC_RADIO_CLIENT,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,14,34,52,10
+    LTEXT           "IP地址:",IDC_STATIC,75,15,29,8
+    CONTROL         "IPAddress2",IDC_IPADDRESS,"SysIPAddress32",WS_TABSTOP,106,12,93,15
+    LTEXT           "端口号:",IDC_STATIC,75,35,29,8
+    EDITTEXT        IDC_PORT,106,32,57,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "启  动(&B)",IDC_BEGIN,206,12,50,14
+    PUSHBUTTON      "关  闭(&D)",IDC_DISCONNECT,206,31,50,14,WS_DISABLED
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME | WS_BORDER,7,55,252,1,WS_EX_CLIENTEDGE | WS_EX_STATICEDGE
+    LTEXT           "已收到:",IDC_TRANSFERS_TIP,9,76,29,8
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",PBS_SMOOTH | WS_BORDER,9,89,248,14
+    PUSHBUTTON      "选择文件(&F)",IDC_SELECT_FILE,9,108,50,14,WS_DISABLED
+    PUSHBUTTON      "停止传输(&T)",IDC_STOP_TRANSFERS,61,108,50,14,WS_DISABLED
+    PUSHBUTTON      "退出(&Q)",IDCANCEL,207,108,50,14
+    LTEXT           "文件名:",IDC_STATIC,9,63,29,8
+    LTEXT           "文件长度:",IDC_STATIC,137,63,37,8
+    CONTROL         "FileName",IDC_FILE_NAME,"Static",SS_LEFTNOWORDWRAP | SS_CENTERIMAGE | WS_GROUP,39,63,92,8
+    LTEXT           "0 字节",IDC_RECEIVE_SIZE,39,76,103,8,SS_CENTERIMAGE
+    LTEXT           "0 字节",IDC_FILE_SIZE,175,63,81,8,SS_CENTERIMAGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "FileDescription", "FileTransfers Microsoft 基础类应用程序"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "FileTransfers"
+            VALUE "LegalCopyright", "版权所有 (C) 2016"
+            VALUE "OriginalFilename", "FileTransfers.EXE"
+            VALUE "ProductName", "FileTransfers 应用程序"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 60
+    END
+
+    IDD_FILETRANSFERS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 259
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 120
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "关于 FileTransfers(&A)..."
+    IDP_SOCKETS_INIT_FAILED "Windows 通信端口初始化失败。"
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\FileTransfers.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
